@@ -1,9 +1,9 @@
 import invariant from 'invariant'
 
-export type Libraries = ("drawing" | "geometry" | "localContext" | "places" | "visualization")[]
+export type Libraries = ('drawing' | 'geometry' | 'localContext' | 'places' | 'visualization')[]
 
 export interface LoadScriptUrlOptions {
-  googleMapsApiKey: string | ""
+  googleMapsApiKey: string | ''
   googleMapsClientId?: string
   version?: string
   language?: string
@@ -21,7 +21,7 @@ export function makeLoadScriptUrl({
   region,
   libraries,
   channel,
-  mapIds
+  mapIds,
 }: LoadScriptUrlOptions): string {
   const params = []
 
